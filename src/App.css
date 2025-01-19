@@ -1,0 +1,73 @@
+.card {
+  background: rgba(255, 255, 255, 0.9); /* Slight transparency for visibility over the background */
+  width: 40%;
+  padding: 20px; /* Increase padding for spacing */
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Add spacing between child elements */
+  text-align: center;
+}
+
+.button1,
+.button {
+  position: relative;
+  outline: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  margin: 10px 0; /* Add margin for vertical spacing */
+}
+
+.button1 {
+  background-color: blue;
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: lightblue;
+}
+
+.button {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.button:hover {
+  background-color: rgba(204, 168, 77, 0.531);
+}
+
+.app {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/image.png") no-repeat center center fixed;
+  background-size: cover; /* Make sure the image covers the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content */
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .button1,
+  .button {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0;
+  }
+}
